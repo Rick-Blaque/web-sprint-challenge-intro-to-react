@@ -9,7 +9,7 @@ const App = () => {
   // the state properties here.
   const [friendsName, setFriendsName] = useState([]);
   const fetchfriends = useEffect(() => {
-    axios.get('https://swapi.dev/api/people').then(function(data) {
+      axios.get('https://swapi.dev/api/people').then(function(data) {
       setFriendsName(data.data)
 
       })}, [])
